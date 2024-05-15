@@ -250,3 +250,11 @@ section {
 .attribution {
   display: none;
 }
+
+@media only screen and (min-width: 768px) {
+  section {
+    & .share-mobile {
+      display: none;
+    }
+  }
+}
