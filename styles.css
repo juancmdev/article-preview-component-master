@@ -87,8 +87,8 @@ main {
   }
 
   & button {
-    width: 65px;
-    height: 65px;
+    width: 55px;
+    height: 55px;
     border-radius: 50px;
     border: none;
     cursor: pointer;
@@ -211,6 +211,10 @@ main {
   }
 }
 
+/* #share-mobile {
+  display: none;
+} */
+
 section {
   & .share-mobile {
     background: rgb(72, 85, 106);
@@ -220,14 +224,14 @@ section {
     gap: 20px;
     width: 100%;
     height: 15%;
-    padding: 16px 40px;
+    padding: 16px 10px;
     border-radius: 0 0 10px 10px;
     position: absolute;
     bottom: 0;
     left: 0;
 
     #p-share-mobile {
-      font-size: 20px;
+      font-size: 15px;
       font-family: "Manrope", sans-serif;
       color: rgb(158, 175, 194);
       margin-right: 10px;
@@ -243,8 +247,15 @@ section {
   }
 }
 
-.display {
-  display: none;
+.btn-mobile {
+  margin-left: 30px;
+  width: 10px;
+  height: 10px;
+  background-color: rgb(99, 112, 134);
+
+  & img {
+    fill: rgb(255, 255, 255);
+  }
 }
 
 .attribution {
@@ -257,4 +268,8 @@ section {
       display: none;
     }
   }
+}
+
+.display {
+  display: none;
 }

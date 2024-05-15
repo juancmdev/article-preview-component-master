@@ -1,10 +1,12 @@
 const btn = document.querySelector("#btn");
+const btn_mobile = document.querySelector(".btn-mobile");
 const share = document.querySelector("#share");
+const share_mobile = document.querySelector("#share-mobile");
 
 if (window.matchMedia("(max-width: 768px)").matches) {
-  console.log("/* La pantalla tiene al menos 768 píxeles de ancho */");
-} else {
-  console.log("/* La pantalla no tiene al menos 400 píxeles de ancho */");
+  btn_mobile.addEventListener("click", () => {
+    share_mobile.classList.toggle("display");
+  });
 }
 
 btn.addEventListener("click", () => {
