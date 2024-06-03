@@ -145,6 +145,13 @@ main {
 /*MOBILE DESIGN*/
 
 @media only screen and (max-width: 768px) {
+  .profile {
+    & .profile-information,
+    .container-img {
+      display: none;
+    }
+  }
+
   #share {
     display: none;
   }
@@ -185,28 +192,6 @@ main {
         margin-bottom: 20px;
         letter-spacing: 1px;
       }
-    }
-  }
-
-  .profile {
-    & .profile-information {
-      & img {
-        width: 50px;
-        height: 50px;
-      }
-
-      & h3 {
-        font-size: 15px;
-      }
-
-      & p {
-        font-size: 13px;
-      }
-    }
-
-    & button {
-      width: 45px;
-      height: 45px;
     }
   }
 }
@@ -262,7 +247,7 @@ section {
   display: none;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   section {
     & .share-mobile {
       display: none;
