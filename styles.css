@@ -148,7 +148,7 @@ main {
   .profile {
     & .profile-information,
     .container-img {
-      display: none;
+      /*display: none;*/
     }
   }
 
@@ -196,10 +196,6 @@ main {
   }
 }
 
-/* #share-mobile {
-  display: none;
-} */
-
 section {
   & .share-mobile {
     background: rgb(72, 85, 106);
@@ -228,18 +224,20 @@ section {
       width: 20px;
       height: 20px;
       border-radius: 0;
+      cursor: pointer;
     }
-  }
-}
 
-.btn-mobile {
-  margin-left: 30px;
-  width: 10px;
-  height: 10px;
-  background-color: rgb(99, 112, 134);
+    & .btn-mobile {
+      margin-left: 30px;
+      width: 40px;
+      height: 40px;
+      background-color: rgb(99, 112, 134);
 
-  & img {
-    fill: rgb(255, 255, 255);
+      & img {
+        width: 50%;
+        fill: rgb(255, 255, 255);
+      }
+    }
   }
 }
 
@@ -257,4 +255,8 @@ section {
 
 .display {
   display: none;
+}
+
+.index {
+  z-index: -1000;
 }
