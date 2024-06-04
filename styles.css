@@ -58,6 +58,7 @@ main {
 .profile {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   & .profile-information {
     display: flex;
@@ -259,4 +260,5 @@ section {
 
 .index {
   z-index: -1000;
+  transition: 3.8s ease;
 }
