@@ -72,9 +72,20 @@ To see how you can add code snippets, see below:
 ```
 
 ```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
+const mediaQuery = window.matchMedia("(max-width: 768px)");
+
+mediaQuery.addEventListener("change", handleMediaQueryChange);
+
+function handleMediaQueryChange(e) {
+  if (e.matches) {
+    consose.log("Do something");
+    };
+  } else {
+      console.log("Do something..............);
+    };
+
+
+handleMediaQueryChange(mediaQuery);
 ```
 
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
@@ -89,18 +100,13 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [W3 School](https://www.w3schools.com/) - I really love this resource.
+- [Mdn](https://developer.mozilla.org/es/) - The best resource for developers.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Github - [juancmdev](https://github.com/juancmdev)
+- Frontend Mentor - [@juancmdev](https://www.frontendmentor.io/profile/juancmdev)
 
 ## Acknowledgments
 
