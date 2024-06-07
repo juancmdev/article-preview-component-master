@@ -146,13 +146,6 @@ main {
 /*MOBILE DESIGN*/
 
 @media only screen and (max-width: 768px) {
-  .profile {
-    & .profile-information,
-    .container-img {
-      /*display: none;*/
-    }
-  }
-
   #share {
     display: none;
   }
@@ -237,6 +230,40 @@ section {
       & img {
         width: 50%;
         fill: rgb(255, 255, 255);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 489px) {
+  .profile {
+    & button {
+      width: 40px;
+      height: 40px;
+    }
+
+    & .profile-information {
+      gap: 10px;
+
+      & img {
+        width: 43px;
+        height: 43px;
+      }
+
+      & h3 {
+        font-size: 12px;
+      }
+
+      & p {
+        font-size: 8px;
+      }
+    }
+  }
+
+  section {
+    & .share-mobile {
+      & .btn-mobile {
+        margin-left: 0;
       }
     }
   }
