@@ -138,6 +138,7 @@ main {
       & img {
         width: 20px;
         border-radius: 0;
+        cursor: pointer;
       }
     }
   }
